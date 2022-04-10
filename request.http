@@ -1,17 +1,16 @@
 ###
-POST http://localhost:3000/api/v2/superheroes/superhero HTTP/1.1
+POST http://localhost:3001/api/v2/superheroes_V2/superhero HTTP/1.1
 Content-Type: application/json
 
 {
-  "superhero_name": "Batman",
-  "real_name": "Bruce Wayne",
+  "superhero_name": "Flasassdfsd",
+  "real_name": "Clark",
   "features": [{
     "universe": "DC",
-    "super_powers": ["Be rich"],
+    "super_powers": ["Be Alien"]
     }],
     "superhero_sidekick": [{
-      "sidekick": "Robin",
-      "side_powers": ["have a sad history", "agility"]
+      "sidekick": "Piotr Rasputin",
+      "side_powers": ["be metallic"]
     }]
-  
 }

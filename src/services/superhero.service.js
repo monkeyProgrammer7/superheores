@@ -9,7 +9,7 @@ class SuperheroService{
     async listSuperheroes(){
         return superheroSchema.find();
     }
-    async findOnesuperhero(){
+    async findOneSuperhero(){
         return superheroSchema.findById({_id: superheroId});
     }
     async editSuperhero(superheroId,superhero, real_name, super_power){
