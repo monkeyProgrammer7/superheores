@@ -14,3 +14,20 @@ Content-Type: application/json
       "side_powers": ["be metallic"]
     }]
 }
+
+###
+POST http://localhost:3001/api/v2/series/serie HTTP/1.1
+Content-Type: application/json
+{
+ "serie":"Serie MVC",
+    "number_seasom":2,
+    "original_language":"ES",
+    "feature_seasons":[{
+   "season_name":"Bad Model",
+        "cast":["Actor1", "Actor2"],
+        "episodes":{
+        "episode_description":"Entretenido",
+        "duration":34
+        }
+    }]
+}

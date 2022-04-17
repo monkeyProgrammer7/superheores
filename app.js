@@ -6,6 +6,10 @@ const axios = require('axios');
 const app = express();
 const PORT = process.env.PORT;
 const { dbConnect } = require('./config/mongo');
+const {logErrors, errorsHandlers, boomErrorsHandlers}= require('./error_handler/errors.handlers')
+app.use(logErrors);
+app.use(errorsHandlers),
+app.use(boomErrorsHandlers)
 //para permitir cuerpo json en los request post http
 app.use(express.json());
 dbConnect();
